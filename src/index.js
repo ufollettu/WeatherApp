@@ -1,6 +1,8 @@
 import * as elements from './elements';
 import {Http} from './http';
 import {WeatherData, weatherProxyHandler} from './weather-data';
+import {updateWeather} from './update-weather';
+
 import './index.scss';
 
 const appId = '0056ed3fccc8562ca99aa035ebd0eceb';
@@ -23,14 +25,5 @@ function searchWeather() {
 			updateWeather(weatherProxy);
 		})
 		.catch(error => alert(error));
-}
-
-function updateWeather(weatherData) {
-	elements.weatherCity.textContent = weatherData.cityName;
-	elements.weatherDescription.textContent = weatherData.description;
-	elements.weatherTemperature.textContent = weatherData.temperature;
-
-	elements.loadingText.style.display = 'none';
-	elements.weatherBox.style.display = 'block';
 }
 
