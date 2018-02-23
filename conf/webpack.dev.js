@@ -12,7 +12,7 @@ module.exports = Merge(CommonConfig, {
 		port: 9000,
 		contentBase: path.join(process.cwd(), 'dist'), // static file location
 		host: 'localhost',
-		historyApiFallback: true, // true for index.html upon 404, object for multiple paths
+		historyApiFallback: true, // true for src/index upon 404, object for multiple paths
 		noInfo: false,
 		stats: 'minimal',
 		hot: true  // hot module replacement. Depends on HotModuleReplacementPlugin

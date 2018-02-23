@@ -1,4 +1,4 @@
-import * as elements from './elements';
+import * as elements from '../elements';
 
 export function updateWeather(weatherData) {
 	elements.weatherCity.textContent = weatherData.cityName;

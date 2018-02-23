@@ -1,4 +1,4 @@
-import * as elements from './elements';
+import * as elements from '../elements';
 import {Http} from './http';
 import {WeatherData, weatherProxyHandler} from './weather-data';
 import {updateWeather} from './update-weather';
